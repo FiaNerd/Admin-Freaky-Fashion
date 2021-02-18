@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin Freaky Fashion</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <script defer type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Administration</h1>
+      <span>Products</span>
+      <img class="logo" src="img/ffLogo.png" alt="LogoType" />
+      <input class="input-search" type="search" placeholder="Search..." />
+      <button class="addProduct-btn" type="submit">
+        <a href="#">New products</a>
+      </button>
+    </header>
+    <main>
+      <table id="product-table">
+        <thead>
+          <tr>
+            <td>Art.nr</td>
+            <td>Product</td>
+            <td>Price</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <template id="product-row">
+        <tr>
+          <td class="artNumber"></td>
+          <td class="products"></td>
+          <td class="price"></td>
+        </tr>
+      </template>
+    </main>
+    <footer></footer>
+  </body>
+</html>
