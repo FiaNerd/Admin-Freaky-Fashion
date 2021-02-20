@@ -16,11 +16,10 @@ body {
 
 header.header {
   display: flex;
-  position: absolute;
   position: fixed;
   flex-direction: row;
-  align-items: center;
-  height: 28%;
+  /* align-items: center; */
+  height: 25%;
   width: 100%;
   background: url("/img/background-img.png");
   background-size: cover;
@@ -28,47 +27,150 @@ header.header {
 
 .header h1 {
   display: flex;
-  position: inline-block;
-  margin-left: 10%;
-}
-
-.header span {
-  position: absolute;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-top: 6%;
-  margin-left: 15%;
+  margin-left: 41%;
+  margin-top: 4.8em;
+  font-weight: 900;
 }
 
 .logo {
   display: flex;
-  /* position: relative; */
+  position: absolute;
   width: 6%;
-  margin-left: 16%;
-  /* justify-content: center; */
+  margin-left: 46.3%;
+  margin-top: 2%;
 }
 
 .input-search {
+  position: absolute;
   height: 2.5em;
-  width: 21em;
+  width: 20em;
   padding: 0.8em;
-  margin-left: 7%;
+  margin-left: 10%;
+  margin-top: 6%;
   border: 1.5px solid #000000;
 }
 
-.addProduct-btn {
+.btn-ProductsAndMain {
+  border: none;
+  text-transform: uppercase;
+  margin-left: 18%;
+}
+
+.btn-ProductsAndMain a {
+  display: flex;
+  position: absolute;
   cursor: pointer;
-  height: 3.2em;
-  width: 9em;
-  font-weight: 700;
-  font-size: 1rem;
-  margin-top: 5%;
-  margin-left: 9%;
+  text-decoration: none;
+  color: #000000;
   border: 1.5px solid #000000;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 1.2em 1.5em;
 }
 
-.addProduct-btn:hover {
-  background: #000000;
+.btn-ProductsAndMain a:hover,
+.btn-ProductsAndMain a:focus {
+  cursor: pointer;
+  background-color: #000000;
   color: #ffffff;
   border: none;
+}
+
+/* MAIN */
+
+.grid-container {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 50% 30%;
+  max-width: 100%;
+  grid-gap: 0em 0em;
+  margin-bottom: 5.7em;
+  margin-left: 22em;
+  margin-top: 20em;
+}
+
+.grid-container img {
+  width: 80%;
+}
+
+.grid-container form {
+  display: grid;
+  flex-direction: column;
+}
+
+caption {
+  color: #000000;
+  font-size: 1.7rem;
+  font-weight: 900;
+  /* margin-bottom: 0.4em; */
+}
+
+table {
+  position: absolute;
+  /* border-collapse: collapse; */
+  border-spacing: 15em 0.8em;
+  /* border: 1px solid #ddd; */
+  border-bottom: 2px solid #292929;
+  margin-top: 15em;
+  margin-left: 6em;
+}
+
+th,
+td {
+  color: rgb(189, 7, 7);
+  padding: 12px 35px;
+  /* border-collapse: collapse; */
+}
+
+th {
+  background: #292929;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+td {
+  color: red;
+}
+
+h2 {
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 43.4%;
+}
+
+.form-register {
+  border: 3px dotted black;
+  width: 130%;
+}
+
+textarea {
+  display: grid;
+  width: 80%;
+  height: 100%;
+  margin-left: 9%;
+  margin-bottom: 6em;
+}
+
+.form-input {
+  position: block;
+  height: 2.2em;
+  margin-left: 9%;
+  width: 80%;
+}
+
+.form-register label {
+  font-size: 1.2rem;
+  position: block;
+  margin-top: 5%;
+  color: rgb(34, 34, 34);
+  margin-left: 9%;
+}
+
+.btn-AddProducts {
+  font-size: 1.5rem;
+  width: 36%;
+  height: 67%;
+  margin-top: 5%;
+  margin-left: 30%;
 }

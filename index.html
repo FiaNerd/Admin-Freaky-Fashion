@@ -16,20 +16,26 @@
   <body>
     <header class="header">
       <h1>Administration</h1>
-      <span>Products</span>
       <img class="logo" src="img/ffLogo.png" alt="LogoType" />
-      <input class="input-search" type="search" placeholder="Search..." />
-      <button class="addProduct-btn" type="submit">
-        <a href="#">New products</a>
+      <input
+        class="input-search"
+        type="search"
+        placeholder="Search products..."
+      />
+      <button class="btn-ProductsAndMain" type="button">
+        <a href="/newProducts.html">New products</a>
       </button>
     </header>
     <main>
       <table id="product-table">
+        <caption>
+          Products
+        </caption>
         <thead>
           <tr>
-            <td>Art.nr</td>
-            <td>Product</td>
-            <td>Price</td>
+            <th>Art.nr</th>
+            <th>Product</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody></tbody>
