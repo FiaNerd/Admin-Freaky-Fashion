@@ -109,31 +109,33 @@ header.header {
   /* display: flex; */
   position: absolute;
   /* border-collapse: collapse; */
-  border-spacing: 8.7em 0.8em;
+  /* border-spacing: 0.5em 0.3em; */
   border-bottom: 2px solid #292929;
+  width: 0%;
   margin-top: 2em;
-  margin-left: 1.5em;
-}
-
-th,
-td {
-  padding: 12px 35px;
-  border-collapse: collapse;
-  margin-right: 10em;
-  margin-top: 10em;
+  margin-left: 12em;
 }
 
 th {
   background: #000000;
+  padding: 12px 35px;
   color: #fff;
   text-transform: uppercase;
   font-size: 0.9rem;
+}
+
+tr {
+  position: relative;
+  border: 3px solid black;
 }
 
 td {
   color: rgb(0, 0, 0);
   font-weight: 400;
   font-size: 1rem;
+  border: 1px solid black;
+  /* padding-left: 0.6em; */
+  padding: 0.3em 0.6em;
 }
 
 h2 {
@@ -150,11 +152,13 @@ h2 {
 }
 
 .textArea {
-  display: grid;
   width: 80%;
   height: 100%;
   margin-left: 9%;
   margin-bottom: 6em;
+  padding-left: 0.3em;
+  padding-top: 0.3em;
+  font-family: "Poppins", sans-serif;
 }
 
 .form-input {
@@ -162,6 +166,7 @@ h2 {
   height: 2.2em;
   margin-left: 9%;
   width: 80%;
+  padding-left: 0.3em;
 }
 
 .form-input.error span {
