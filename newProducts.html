@@ -11,7 +11,7 @@
     />
     <title>new Products Freaky Fashion</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
-    <script defer type="text/javascript" src="js/addproducts.js"></script>
+    <script defer type="text/javascript" src="js/registerProducts.js"></script>
   </head>
   <body>
     <header class="header">
@@ -26,22 +26,31 @@
     <main>
       <div class="grid-container">
         <img class="left-content" src="img/imageLeftGrid.png" alt="img" />
-        <form class="form-register" action="/newsletter.html" method="POST">
+
+        <form class="form-register" action="/index.html" method="POST">
           <label>Name: </label>
-          <input class="form-input" type="text" name="name" />
+          <input class="form-input" type="text" name="productName" />
 
           <label>Article number: </label>
-          <input class="form-input" type="text" name="socialSecurityNumber" />
+          <input class="form-input" type="text" name="artNumber" />
+          <span>Error Message</span>
 
           <label>Description:</label>
-          <textarea class="textArea"></textarea>
+          <textarea class="textArea" type="text" name="description"></textarea>
           <label>Price: </label>
-          <input class="form-input" type="text" name="socialSecurityNumber" />
+          <input class="form-input" type="text" name="price" />
 
           <label>Picture: </label>
-          <input class="form-input" type="image" name="socialSecurityNumber" />
+          <input class="form-input" type="imageURL" name="picture" />
 
-          <button class="btn-AddProducts">Register</button>
+          <button
+            class="btn-AddProducts"
+            type="submit"
+            name="button"
+            value="submitButton"
+          >
+            Register
+          </button>
         </form>
       </div>
     </main>

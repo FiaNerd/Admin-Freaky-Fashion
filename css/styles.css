@@ -26,7 +26,7 @@ header.header {
 
 .header h1 {
   display: flex;
-  margin-left: 42.3%;
+  margin-left: 19.8em;
   margin-top: 4.8em;
   font-weight: 900;
 }
@@ -35,7 +35,7 @@ header.header {
   display: flex;
   position: absolute;
   width: 6%;
-  margin-left: 47%;
+  margin-left: 44.5em;
   margin-top: 3%;
 }
 
@@ -89,6 +89,7 @@ header.header {
 }
 
 .grid-container img {
+  position: relative;
   width: 80%;
 }
 
@@ -102,35 +103,37 @@ header.header {
   font-size: 1.7rem;
   font-weight: 900;
   margin-bottom: 0.4em;
-  margin-left: 0.5em;
 }
 
-table {
+#product-table {
+  /* display: flex; */
   position: absolute;
   /* border-collapse: collapse; */
-  border-spacing: 15em 0.8em;
-  /* border: 1px solid #ddd; */
+  border-spacing: 8.7em 0.8em;
   border-bottom: 2px solid #292929;
   margin-top: 2em;
-  margin-left: 6em;
+  margin-left: 1.5em;
 }
 
 th,
 td {
-  color: rgb(189, 7, 7);
   padding: 12px 35px;
-  /* border-collapse: collapse; */
+  border-collapse: collapse;
+  margin-right: 10em;
+  margin-top: 10em;
 }
 
 th {
-  background: #292929;
+  background: #000000;
   color: #fff;
   text-transform: uppercase;
   font-size: 0.9rem;
 }
 
 td {
-  color: red;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 h2 {
@@ -159,6 +162,10 @@ h2 {
   height: 2.2em;
   margin-left: 9%;
   width: 80%;
+}
+
+.form-input.error span {
+  margin-left: 9%;
 }
 
 .form-register label {
