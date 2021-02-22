@@ -4,7 +4,7 @@ let addProducts = JSON.parse(localStorage.getItem("Products")) ?? [];
 
 const tbody = document.querySelector("tbody");
 
-const template = document.querySelector("#product-row");
+const template = document.querySelector("#product-row-template");
 
 addProducts.forEach((product) => {
   let clone = template.content.cloneNode(true);

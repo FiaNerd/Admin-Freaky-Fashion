@@ -18,5 +18,6 @@ form.addEventListener("submit", (event) => {
   addProducts.push(registerProduct);
 
   localStorage.setItem("Products", JSON.stringify(addProducts));
-  console.log(localStorage);
+
+  form.reset();
 });

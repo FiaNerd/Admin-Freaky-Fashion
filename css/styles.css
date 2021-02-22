@@ -71,8 +71,9 @@ header.header {
 .btn-ProductsAndMain a:focus {
   cursor: pointer;
   background-color: #e19c47;
+  border: 2px solid #000000;
   color: #ffffff;
-  border: none;
+  /* border: none; */
 }
 
 /* MAIN */
@@ -81,9 +82,9 @@ header.header {
   display: grid;
   position: absolute;
   grid-template-columns: 50% 30%;
-  max-width: 100%;
+  max-width: 100;
   grid-gap: 5em 0em;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
   margin-left: 19em;
   margin-top: 6em;
 }
@@ -106,14 +107,12 @@ header.header {
 }
 
 #product-table {
-  /* display: flex; */
-  position: absolute;
-  /* border-collapse: collapse; */
-  /* border-spacing: 0.5em 0.3em; */
+  position: block;
+  border-spacing: 0.3em 0.3em;
   border-bottom: 2px solid #292929;
-  width: 0%;
+  width: 90%;
   margin-top: 2em;
-  margin-left: 12em;
+  margin-left: 4em;
 }
 
 th {
@@ -162,7 +161,7 @@ h2 {
 }
 
 .form-input {
-  position: block;
+  /* position: block; */
   height: 2.2em;
   margin-left: 9%;
   width: 80%;
