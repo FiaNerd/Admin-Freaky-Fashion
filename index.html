@@ -26,6 +26,7 @@
         <a href="/newProducts.html">New products</a>
       </button>
     </header>
+
     <main>
       <table id="product-table">
         <caption class="productTitle">
@@ -33,11 +34,11 @@
         </caption>
         <thead>
           <tr>
-            <th>Product</th>
             <th>Art.nr</th>
-            <th>Description</th>
+            <th>Product</th>
+            <!-- <th>Description</th> -->
             <th>Price</th>
-            <th>Picture</th>
+            <!-- <th>Picture</th> -->
           </tr>
         </thead>
         <tbody></tbody>
@@ -45,14 +46,15 @@
 
       <template id="product-row-template">
         <tr>
-          <td class="productName"></td>
           <td class="artNumber"></td>
-          <td class="decription"></td>
+          <td class="productName"></td>
+          <!-- <td class="decription"></td> -->
           <td class="price"></td>
-          <td class="picture"></td>
+          <!-- <td class="picture"></td> -->
         </tr>
       </template>
     </main>
+
     <footer class="copyRight-footer">
       <p>&copy; Copyright 2021 FreakyFashion</p>
     </footer>
