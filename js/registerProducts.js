@@ -31,10 +31,21 @@ function checkInput(inputArr) {
   });
 }
 
+function checkArticle(inputArt) {
+  inputArt.forEach(function (input) {
+    if (input.value.trim() === input.ArtNumber) {
+      showError(input, "Article is occupied");
+    } else {
+      showValid(input);
+    }
+  });
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   checkInput([productName, artNr, price]);
+  checkArticle(artNr);
 
   if (productName.value.trim() && artNr.value.trim() && price.value.trim()) {
     checkArtNum(productName.value, artNr.value, price.value);
@@ -63,5 +74,7 @@ function checkArtNum(productName, artNr, price) {
     localStorage.setItem("Products", JSON.stringify(addProducts));
 
     form.reset();
+  } else {
+    checkArticle(artNr);
   }
 }
