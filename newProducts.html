@@ -28,46 +28,60 @@
       <div class="grid-container">
         <img class="left-content" src="img/imageLeftGrid.png" alt="img" />
 
-        <form class="form-register" action="/index.html" method="POST">
-          <label>Name: </label>
-          <input
-            class="form-input"
-            type="text"
-            name="productName"
-            placeholder="Enter product"
-          />
+        <form class="form" action="/index.html" method="POST">
+          <div class="form-register">
+            <label>Name: </label>
+            <input
+              class="name"
+              type="text"
+              name="productName"
+              placeholder="Enter product"
+            />
+            <span>error message</span>
+          </div>
 
-          <label>Article number: </label>
-          <input
-            class="form-input"
-            type="text"
-            name="artNumber"
-            placeholder="Enter article number"
-          />
-          <span>Error Message</span>
+          <div class="form-register">
+            <label>Article number: </label>
+            <input
+              class="artNr"
+              type="text"
+              name="artNumber"
+              placeholder="Enter article number"
+            />
+            <span>Error Message</span>
+          </div>
 
-          <label>Description:</label>
-          <textarea
-            class="textArea"
-            type="text"
-            name="description"
-            placeholder="Describe the product"
-          ></textarea>
-          <label>Price: </label>
-          <input
-            class="form-input"
-            type="text"
-            name="price"
-            placeholder="Enter price"
-          />
+          <div class="form-register">
+            <label>Description:</label>
+            <textarea
+              class="textArea"
+              type="text"
+              name="description"
+              placeholder="Describe the product"
+            ></textarea>
+            <span>Error Message</span>
+          </div>
 
-          <label>Picture: </label>
-          <input
-            class="form-input"
-            type="imgURL"
-            name="picture"
-            placeholder="Enter picture url"
-          />
+          <div class="form-register">
+            <label>Price: </label>
+            <input
+              class="price"
+              type="text"
+              name="price"
+              placeholder="Enter price"
+            />
+            <span>error message</span>
+          </div>
+
+          <div class="form-register">
+            <label>Picture: </label>
+            <input
+              class="picture"
+              type="imgURL"
+              name="picture"
+              placeholder="Enter picture url"
+            />
+          </div>
 
           <button
             class="btn-AddProducts"
