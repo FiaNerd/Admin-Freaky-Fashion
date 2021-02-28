@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
@@ -11,17 +12,31 @@
     />
     <title>Admin Freaky Fashion</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
+
     <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer type="text/Javascript" src="js/search.js"></script>
   </head>
   <body>
     <header class="header">
       <h1>Administration</h1>
       <img class="logo" src="img/ffLogo.png" alt="LogoType" />
-      <input
-        class="input-search"
-        type="search"
-        placeholder="Search products..."
-      />
+
+      <div class="search-container">
+        <div class="search-box">
+          <input
+            type="text"
+            name="search"
+            id="searchInput"
+            placeholder="Search"
+            autocomplete="chrome-off"
+          />
+          <button class="button-search">
+            <img class="searchIcon" src="/img/searcIcon.png" />
+          </button>
+          <div class="result-list"></div>
+        </div>
+      </div>
+
       <button class="btn-ProductsAndMain" type="button">
         <a href="/newProducts.html">New products</a>
       </button>

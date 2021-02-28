@@ -39,15 +39,94 @@ header.header {
   margin-top: 3%;
 }
 
-.input-search {
-  position: absolute;
-  height: 2.5em;
-  width: 20em;
-  padding: 0.8em;
-  margin-left: 10%;
-  margin-top: 6%;
-  border: 1.5px solid #000000;
+.searchIcon {
+  width: 2.5em;
+  margin-top: 0.5em;
 }
+
+.search-container {
+  position: absolute;
+  top: 7em;
+  left: 6em;
+}
+
+.search-box {
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
+  position: relative;
+  width: 20em;
+}
+
+#searchInput {
+  width: 100%;
+  border: none;
+  height: 2.2em;
+  border-radius: 5px;
+  padding: 0 3.3em 0 0.5em;
+  font-size: 1.3rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput:focus {
+  outline: none;
+}
+
+.button-search {
+  position: absolute;
+  border: none;
+  background: none;
+  top: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  width: 5em;
+}
+
+.button-search:focus {
+  outline: none;
+}
+
+.button-search > .searchIcon {
+  cursor: pointer;
+  width: 50%;
+  line-height: 50px;
+}
+
+.result-list {
+  padding: 0px;
+  cursor: default;
+}
+
+.result-list ul {
+  margin: 0;
+  padding: 0;
+}
+.result-list ul li {
+  list-style: none;
+  border-radius: 3px;
+  opacity: 0;
+  display: none;
+  padding: 8px 12px;
+  transition: all 0.5s linear;
+}
+
+.show .result-list ul li {
+  opacity: 1;
+  display: block;
+}
+
+.show .result-list {
+  padding: 10px;
+}
+
+.result-list ul li:hover {
+  background: #ececec;
+}
+
+/* BUTTON */
 
 .btn-ProductsAndMain {
   border: none;
@@ -99,7 +178,7 @@ header.header {
 }
 
 .productTitle {
-  /* position: absolute; */
+  position: relative;
   color: #000000;
   font-size: 1.7rem;
   font-weight: 900;
@@ -108,7 +187,7 @@ header.header {
 
 #product-table {
   border-spacing: 0.3em 0.3em;
-  border-bottom: 2px solid #292929;
+  border-bottom: 10px solid #292929;
   width: 60%;
   margin-left: 19em;
   margin-bottom: 5em;
@@ -234,7 +313,9 @@ td {
 
 .copyRight-footer {
   display: flex;
+  position: absolute;
   justify-content: center;
+  top: 66em;
   bottom: 0;
   background: url("/img/footerImg.png");
   background-size: cover;
