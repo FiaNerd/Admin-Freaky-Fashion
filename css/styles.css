@@ -94,7 +94,7 @@ header.header {
   width: 50%;
   line-height: 50px;
 }
-
+/* 
 .result-list {
   padding: 0px;
   cursor: default;
@@ -124,7 +124,7 @@ header.header {
 
 .result-list ul li:hover {
   background: #ececec;
-}
+} */
 
 /* BUTTON */
 
@@ -214,6 +214,10 @@ td {
   padding: 0.3em 0.6em;
 }
 
+tbody tr:nth-child(even) {
+  background: rgb(241, 241, 241);
+}
+
 .header h2 {
   position: absolute;
   font-size: 1.7rem;
@@ -223,10 +227,10 @@ td {
 }
 
 .form {
+  position: relative;
   border: 3px dotted black;
   width: 130%;
   padding-bottom: 2em;
-  position: relative;
 }
 
 .form-register {
@@ -312,10 +316,6 @@ td {
 }
 
 .copyRight-footer {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  top: 66em;
   bottom: 0;
   background: url("/img/footerImg.png");
   background-size: cover;
@@ -324,8 +324,9 @@ td {
 }
 
 .copyRight-footer p {
-  display: flex;
-  align-items: center;
+  position: relative;
+  text-align: center;
+  top: 1em;
   font-size: 1rem;
   color: #dfdfdf;
 }

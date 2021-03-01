@@ -1,13 +1,15 @@
 "use strict";
 
-let searchable = [
-  "Evergrey",
-  "Architects",
-  "Amon Amarth",
-  "Amorphis",
-  "Behemot",
-  "Mercenary",
-];
+// let searchable = [
+//   "Evergrey",
+//   "Architects",
+//   "Amon Amarth",
+//   "Amorphis",
+//   "Behemot",
+//   "Mercenary",
+// ];
+
+let getProducts = JSON.parse(localStorage.getItem("Products")) ?? [];
 
 // const searchContainer = document.querySelector(".search-container");
 const searchInput = document.getElementById("searchInput");
@@ -16,11 +18,11 @@ const resultsWrapper = document.querySelector(".result-list");
 
 searchInput.addEventListener("keyup", (event) => {
   event.preventDefault();
-  let userData = event.target.value;
+  let searchProducts = event.target.value;
   let resultList = [];
-  if (userData.length) {
-    resultList = searchable.filter((data) => {
-      return data.toLowerCase().startsWith(userData.toLowerCase());
+  if (searchProducts.length) {
+    resultList = getProducts.filter((data) => {
+      return data.toLowerCase().startsWith(searchProducts.toLowerCase());
     });
   }
   showResults(resultList);
@@ -32,10 +34,10 @@ function showResults(resultList) {
   }
   let contentText = resultList
     .map((data) => {
-      return `<li>${data}</li>`;
+      return `<tr>${data}</tr>`;
     })
     .join("");
 
   searchBox.classList.add("show");
-  resultsWrapper.innerHTML = `<ul>${contentText}</ul>`;
+  resultsWrapper.innerHTML = `<td>${contentText}</td>`;
 }
