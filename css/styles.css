@@ -50,23 +50,23 @@ header.header {
   left: 6em;
 }
 
-.search-box {
+/*Till DROPDOWN
+/* .search-box {
   margin: 0 auto;
   background: #ffffff;
   border-radius: 5px;
   box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.15);
   position: relative;
   width: 20em;
-}
+} */
 
 #searchInput {
   width: 100%;
   border: none;
   height: 2.2em;
-  border-radius: 5px;
+  border-radius: 2.3px;
   padding: 0 3.3em 0 0.5em;
   font-size: 1.3rem;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 #searchInput:focus {
@@ -187,7 +187,7 @@ header.header {
 
 #product-table {
   border-spacing: 0.3em 0.3em;
-  border-bottom: 10px solid #292929;
+  border-bottom: 15px solid #292929;
   width: 60%;
   margin-left: 19em;
   margin-bottom: 5em;
@@ -234,9 +234,9 @@ tbody tr:nth-child(even) {
 }
 
 .form-register {
+  position: relative;
   margin-bottom: 0em;
   padding-bottom: 0em;
-  position: relative;
 }
 
 .textArea {

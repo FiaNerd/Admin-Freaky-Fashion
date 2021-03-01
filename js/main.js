@@ -12,9 +12,7 @@ addProducts.forEach((product) => {
   let td = clone.querySelectorAll("td");
   td[0].textContent = product.ArtNumber;
   td[1].textContent = product.Name;
-  // td[2].textContent = product.Description;
   td[2].textContent = product.Price;
-  // td[4].textContent = product.Picture;
 
   tbody.appendChild(clone);
 });
