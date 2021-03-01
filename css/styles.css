@@ -212,6 +212,7 @@ td {
   font-size: 1rem;
   border: 1px solid black;
   padding: 0.3em 0.6em;
+  text-align: center;
 }
 
 tbody tr:nth-child(even) {
