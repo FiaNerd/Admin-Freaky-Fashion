@@ -11,8 +11,8 @@ let products = JSON.parse(localStorage.getItem("Products")) ?? [];
 
 searchInput.addEventListener("keyup", (event) => {
   event.preventDefault();
-  const searchProducts = searchInput.value.toLowerCase();
-  productTemplate.innerHTML = "";
+  const searchProducts = event.target.value.toLowerCase();
+  productTemplate.textContent = "";
   const userSearchProducts = products.filter((product) => {
     return product.Name.toLowerCase().startsWith(searchProducts);
   });
@@ -20,10 +20,10 @@ searchInput.addEventListener("keyup", (event) => {
 
   userSearchProducts.forEach((search) => {
     const tdProduct = document.createElement("td");
-    tdProduct.innerHtml = search.Name;
+    tdProduct.textContent = search.Name;
     productTemplate.appendChild(tdProduct);
   });
   if (searchProducts === "") {
-    productTemplate.innerHTML = "";
+    productTemplate.textContent = "";
   }
 });
