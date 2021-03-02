@@ -135,7 +135,7 @@ header.header {
   margin-bottom: 5em;
   margin-left: 19em;
   margin-top: 7em;
-  padding: 1em;
+  padding: 2em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -286,7 +286,8 @@ tbody tr:nth-child(even) {
   background-color: #e19c47;
 }
 
-.copyRight-footer {
+.copyRight-footerMain {
+  position: absolute;
   bottom: 0;
   background: url("/img/footerImg.png");
   background-size: cover;
@@ -294,7 +295,23 @@ tbody tr:nth-child(even) {
   width: 100%;
 }
 
-.copyRight-footer p {
+.copyRight-footerMain p {
+  position: relative;
+  text-align: center;
+  top: 1em;
+  font-size: 1rem;
+  color: #dfdfdf;
+}
+
+.copyRight-footerProduct {
+  bottom: 0;
+  background: url("/img/footerImg.png");
+  background-size: cover;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.copyRight-footerProduct p {
   position: relative;
   text-align: center;
   top: 1em;
