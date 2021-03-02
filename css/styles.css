@@ -71,6 +71,7 @@ header.header {
 
 #searchInput:focus {
   outline: none;
+  border: 2px solid #e19c47;
 }
 
 .button-search {
@@ -94,37 +95,6 @@ header.header {
   width: 50%;
   line-height: 50px;
 }
-/* 
-.result-list {
-  padding: 0px;
-  cursor: default;
-}
-
-.result-list ul {
-  margin: 0;
-  padding: 0;
-}
-.result-list ul li {
-  list-style: none;
-  border-radius: 3px;
-  opacity: 0;
-  display: none;
-  padding: 8px 12px;
-  transition: all 0.5s linear;
-}
-
-.show .result-list ul li {
-  opacity: 1;
-  display: block;
-}
-
-.show .result-list {
-  padding: 10px;
-}
-
-.result-list ul li:hover {
-  background: #ececec;
-} */
 
 /* BUTTON */
 
@@ -216,7 +186,7 @@ td {
 }
 
 tbody tr:nth-child(even) {
-  background: rgb(241, 241, 241);
+  background: rgb(235, 235, 235);
 }
 
 .header h2 {
