@@ -156,6 +156,7 @@ header.header {
 }
 
 #product-table {
+  /* position: absolute; */
   border-spacing: 0.3em 0.3em;
   border-bottom: 15px solid #292929;
   width: 60%;
@@ -286,7 +287,7 @@ tbody tr:nth-child(even) {
   background-color: #e19c47;
 }
 
-.copyRight-footerMain {
+/* .copyRight-footerMain {
   position: absolute;
   bottom: 0;
   background: url("/img/footerImg.png");
@@ -301,7 +302,7 @@ tbody tr:nth-child(even) {
   top: 1em;
   font-size: 1rem;
   color: #dfdfdf;
-}
+} */
 
 .copyRight-footerProduct {
   bottom: 0;
