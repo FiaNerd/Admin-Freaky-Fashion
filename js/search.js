@@ -4,11 +4,7 @@ const searchInput = document.getElementById("searchInput");
 
 const tbodyProduct = document.querySelector("tbody");
 
-// const trProduct = document.querySelector("tr");
-
 const productTemplate = document.querySelector("#product-row-template");
-
-// const tbodyProduct = querySelector("tbody");
 
 let getProducts = JSON.parse(localStorage.getItem("Products")) ?? [];
 
@@ -30,12 +26,7 @@ searchInput.addEventListener("keyup", (event) => {
     td[2].textContent = search.Price;
 
     tbodyProduct.append(cloneTemplate);
-
-    // tbodyProduct.classList.add("tbody");
   });
-  // tbodyProduct.classList.remove("tbody");
 
   console.log("Products", userSearchProducts);
 });
-
-// delete tbody.querySelectorAll("tbody");

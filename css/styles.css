@@ -153,14 +153,6 @@ header.header {
   margin-bottom: 5em;
 }
 
-tbody {
-  visibility: visible;
-}
-
-tbody.show {
-  visibility: hidden;
-}
-
 th {
   background: #000000;
   padding: 12px 35px;
