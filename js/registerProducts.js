@@ -31,15 +31,15 @@ function checkInput(inputArr) {
   });
 }
 
-// function checkArticle(inputArt) {
-//   inputArt.forEach(function (input) {
-//     if (input.value.trim() === input.ArtNumber) {
-//       showError(input, "Article is occupied");
-//     } else {
-//       showValid(input);
-//     }
-//   });
-// }
+function checkArticle(inputArt) {
+  inputArt.forEach(function (input) {
+    if (input.value.trim() === input.ArtNumber) {
+      showError(input, "Article is occupied");
+    } else {
+      showValid(input);
+    }
+  });
+}
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -48,6 +48,10 @@ form.addEventListener("submit", (event) => {
   // checkArticle(artNr);
 
   if (productName.value.trim() && artNr.value.trim() && price.value.trim()) {
+    checkArtNum(productName.value, artNr.value, price.value);
+  }
+
+  if (checkRequired(productName, artNr, price)) {
     checkArtNum(productName.value, artNr.value, price.value);
   }
 });
@@ -62,19 +66,25 @@ function checkArtNum(productName, artNr, price) {
     ArtNumber: artNr,
     Price: price,
   };
-  const addProducts = JSON.parse(localStorage.getItem("Products")) ?? [];
+
+  let products = fetchProducts();
 
   if (
-    !addProducts.some(
+    !products.some(
       (regProducts) => regProducts.ArtNumber === registerProduct.ArtNumber
     )
   ) {
-    addProducts.push(registerProduct);
+    products.push(registerProduct);
 
-    localStorage.setItem("Products", JSON.stringify(addProducts));
+    localStorage.setItem("Products", JSON.stringify(products));
 
     form.reset();
-  } else {
-    // checkArticle(artNr);
+  } else if (registerProduct.value.trim() === registerProduct.ArtNumber) {
+    showError(input, "Article is occupied");
   }
+}
+
+function fetchProducts() {
+  let addProducts = JSON.parse(localStorage.getItem("Products")) ?? [];
+  return addProducts;
 }
